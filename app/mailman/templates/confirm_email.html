@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verify your email</title>
+    <style type="text/css">
+        h1 {
+            font-size: 1.5em;
+            color: #444;
+        }
+        button {
+            background-color: rgb(217, 204, 252);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verify your email</h1>
+    <p>Hi {{name}},</p>
+    <p>Thanks for signing up for our service. Please click the link below to verify your email address.</p>
+    <button><a href="{{params["confirm_url"]}}">Verify Email</a></button>
+    <p>If you did not sign up for our service, please ignore this email.</p>
+    <p>Thanks,</p>
+    <p>Our Team</p>
+</html>

@@ -1,0 +1,1 @@
+from app.mailman.routes import mailman_bp
